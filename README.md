@@ -6,6 +6,8 @@ This README document steps to get the application up and running and tested.
 
 * Prerequisites:
     * Ruby 3.1.2
+        * Install ruby version management software see: [rbenv](https://javierjulio.com/rbenv/)
+        * Install ruby v3.1.2: `rbenv install 3.1.2`
     * PostgreSQL 14.x
 * Checkout repo
 * Install gem dependencies: `bundle install`
