@@ -46,7 +46,7 @@ class Api::V1::ParkingLotController < ApplicationController
     end
   end
 
-  def park
+  def vehicle_park
     parking_lot = ParkingLot.find_by_name(params[:parking_lot_name])
     unless parking_lot
       render json: {status: "ERROR", message: "Parking lot does not exist"}, status: :not_found and return
@@ -64,7 +64,7 @@ class Api::V1::ParkingLotController < ApplicationController
     render json: {status: "ERROR", message: e.message}, status: :unprocessable_entity
   end
 
-  def remove
+  def vehicle_remove
     parking_lot = ParkingLot.find_by_name(params[:parking_lot_name])
 
     if parking_lot

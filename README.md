@@ -130,7 +130,7 @@ curl -v -X GET "http://127.0.0.1:3000/api/v1/parking_lot/LotA/is_full"
 }
 ```
 
-## POST parking_lot/:parking_lot_name/park
+## POST parking_lot/:parking_lot_name/vehicle_park
 
 API to park a vehicle
 
@@ -146,7 +146,7 @@ API to park a vehicle
 ### Example Request
 
 `
-curl -v -X POST -H "Content-Type: multipart/form-data;" -d "vehicle_type=car&vehicle_plate=MA_12345" "http://127.0.0.1:3000/api/v1/parking_lot/LotA/park"
+curl -v -X POST -H "Content-Type: multipart/form-data;" -d "vehicle_type=car&vehicle_plate=MA_12345" "http://127.0.0.1:3000/api/v1/parking_lot/LotA/vehicle_park"
 `
 
 ### Example Response
@@ -171,7 +171,7 @@ curl -v -X POST -H "Content-Type: multipart/form-data;" -d "vehicle_type=car&veh
 
 ```
 
-## DELETE parking_lot/:parking_lot_name/remove/:vehicle_plate
+## DELETE parking_lot/:parking_lot_name/vehicle_remove/:vehicle_plate
 
 API to un-park a vehicle by vehicle plate number
 
@@ -183,7 +183,7 @@ API to un-park a vehicle by vehicle plate number
 ### Example request
 
 `
-curl -v -X DELETE "http://127.0.0.1:3000/api/v1/parking_lot/LotA/remove/MA_3"
+curl -v -X DELETE "http://127.0.0.1:3000/api/v1/parking_lot/LotA/vehicle_remove/MA_3"
 `
 
 ### Example response
