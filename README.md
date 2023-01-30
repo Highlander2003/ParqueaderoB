@@ -9,7 +9,8 @@ This README document steps to get the application up and running and tested.
         * Install ruby version management software see: [rbenv](https://javierjulio.com/rbenv/)
         * Install ruby v3.1.2: `rbenv install 3.1.2`
     * PostgreSQL 14.x
-* Checkout repo
+* Clone repo: `git clone https://github.com/raydog153/example_parking_api.git`
+* Change directory into project: `cd ./example_parking_api`
 * Install gem dependencies: `bundle install`
 * Setup database: `rake db:create db:migrate db:seed`
 
