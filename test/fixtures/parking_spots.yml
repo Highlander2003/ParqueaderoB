@@ -1,11 +1,10 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  spot_number: 1
-  vehicle_type: MyString
-  occupied: false
+  spot_number: car_1
+  vehicle_type: car
 
 two:
-  spot_number: 1
-  vehicle_type: MyString
-  occupied: false
+  spot_number: car_2
+  vehicle_type: car
+  vehicle_plate: MA_1

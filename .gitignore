@@ -30,3 +30,4 @@
 
 # Project files
 /.idea
+/coverage/*

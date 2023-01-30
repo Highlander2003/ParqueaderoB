@@ -24,7 +24,7 @@ class Api::V1::ParkingLotController < ApplicationController
 
   def parking_available
     parking_lot = ParkingLot.find_by_name(params[:parking_lot_name])
-    if params[:vehicle_type].nil?
+    if params[:vehicle_type].nil? || !["car", "motorcycle", "van"].include?(params[:vehicle_type])
       render json: {status: "ERROR", message: "Missing query param vehicle_type"}, status: :bad_request and return
     end
 

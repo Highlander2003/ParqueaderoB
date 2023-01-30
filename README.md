@@ -20,6 +20,7 @@ Note: The database gets setup with 1 parking lot named "LotA" with specific spot
 ## How to run unit tests
 
 * Run `rake -t`
+* View coverage in browser: `open coverage/index.html`
 
 # API Routes
 
