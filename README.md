@@ -11,7 +11,7 @@ This README document steps to get the application up and running and tested.
 * Install gem dependencies: `bundle install`
 * Setup database: `rake db:create db:migrate db:seed`
 
-Note: The database gets setup with 1 parking lot named "LotA" that spots for 5 vans, 5 motorcycles, and 20 cars.
+Note: The database gets setup with 1 parking lot named "LotA" with specific spots for 5 vans, 5 motorcycles, and 20 cars.
 
 ## How to run app
 
@@ -20,7 +20,6 @@ Note: The database gets setup with 1 parking lot named "LotA" that spots for 5 v
 ## How to run unit tests
 
 * Run `rake -t`
-* View coverage in browser: `open coverage/index.html`
 
 # API Routes
 
